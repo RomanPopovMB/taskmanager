@@ -18,6 +18,7 @@ def seed_data_if_missing():
     try:
         return get_users(session)
     except Exception as e:
+        print("Could not access database. Seeding...")
         seed_data()
 
 def seed_data():

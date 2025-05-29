@@ -1,0 +1,4 @@
+# Build en Docker.
+docker-compose up --build
+# Build en Docker quitando imágenes antiguas.
+docker-compose up --build --remove-orphans

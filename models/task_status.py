@@ -8,5 +8,5 @@ class Task_StatusBase(SQLModel):
 class Task_Status(Task_StatusBase, table=True):
     id: Optional[int] = Field(default = None, primary_key = True)
 
-class TaskStatusCreate(Task_StatusBase):
+class Task_StatusCreate(Task_StatusBase):
     pass  # Excluir los campos que no están en la clase base.

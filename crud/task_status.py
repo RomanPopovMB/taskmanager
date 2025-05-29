@@ -1,6 +1,5 @@
 from sqlmodel import Session, select
 from models.task_status import Task_Status
-import datetime
 
 def create_task_status(session: Session, task_status: Task_Status):
     session.add(task_status)
